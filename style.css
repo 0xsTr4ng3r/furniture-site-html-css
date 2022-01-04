@@ -106,10 +106,11 @@ body{
 }
 .sticky-menu{
     display: flex;
+    flex-wrap: wrap;
     position: sticky;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: black;
-    padding: 15px 50px;
+    padding: 15px 0px;
     color: white;
 }
 .body{
@@ -215,4 +216,53 @@ body{
     margin-bottom: 100px;
     background-color: #dfe7fd;
     padding: 20px;
+  }
+  @media only screen and (max-width: 900px ) {
+      .about-us .text-box{
+          margin-top: 30px;
+      }
+      .fmain{
+          flex-direction: column-reverse;
+          padding: 0%;
+          height: auto;
+          text-align: center;
+      }
+      .footer-title{
+          margin-top: 30px;
+      }
+      .subscribe{
+          margin-bottom: 30px;
+      }
+      .body{
+          margin: 30px 0px;
+      }
+      .header{
+          text-align: center;
+      }
+      .login{
+          position: relative;
+          display: block;
+          margin: 0px auto;
+          margin-top: 5px;
+      }
+      .header .title{
+          margin: 0%;
+      }
+      .sticky-menu{
+          flex-direction: column;
+          text-align: center;
+      }
+      .sticky-menu .buttons{
+          display: block;
+          margin: 0px auto;
+      }
+      .sticky-btn{
+          display: block;
+      }
+  }
+  @media only screen and (max-width: 550px) {
+      .video iframe{
+          width: 300px;
+          height: 150px;
+      }
   }
