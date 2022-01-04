@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background: rgb(233,249,201);
+    background: linear-gradient(90deg, rgba(233,249,201,1) 0%, rgba(255,255,249,1) 49%, rgba(233,249,201,1) 100%);
+}
+.bg-slide{
+    /* border: 1px solid black; */
+    background-image: url(./images/slide.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 500px;
+}
+.header{
+    position: relative;
+    padding: 10px 0px;
+    background-color: rgba(0, 0, 0, 0.253);
+    /* border: 1px solid black; */
+}
+.title{
+    font-family: 'Pushster', cursive;
+    font-size: xx-large;
+    color: #ffffff;
+    margin-left: 70px;
+}
+.align-right{
+    position: absolute;
+    right: 0;
+}
+.btn{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    color: #e8e8e4;
+    background-color: #0a0908;
+    padding: 5px 10px;
+    text-align: center;
+}
+.sticky-btn{
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100px;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 1px;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+.sticky-btn:hover{
+    letter-spacing: 2px;
+    border-bottom: 2px solid white;
+}
+.login{
+    margin-top: 2px;
+    margin-right: 10px;
+    border: 3px solid #0a0908;
+    width: 60px;
+}
+.login:hover{
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #e8e8e4;
+}
+.fmain{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    height: 100px;
+    padding: 100px 200px;
+}
+.subscribe{
+    margin-top: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+.subscribe input[type=text],input[type=submit]{
+    padding: 5px 7px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 5px;
+    font-size: medium;
+}
+.subscribe input[type=submit]{
+    color: black;
+    background-color: white;
+    border-color: white;
+    margin-left: -1px;
+}
+.footer-title{
+    font-family: 'Pushster', cursive;
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+.footer-link{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+.sticky-menu{
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    background-color: black;
+    padding: 15px 50px;
+    color: white;
+}
+.body{
+   margin: 40px 150px;
+}
+.about-us{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.text-box{
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-box p{
+    font-family: 'Roboto Condensed', sans-serif;
+    display: block;
+    padding: 0px 25px;
+    text-align: start;
+}
+.text-title{
+    font-family: 'Pushster', cursive;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: large;
+    word-spacing: 3px;
+}
+.box{
+    margin: 0px 10px;
+}
+.cart{
+    padding-top: 5px;
+}
+.cart>a>img{
+    margin: 0px 5px;
+}
+.body-title{
+    font-family: 'Pushster', cursive;
+    margin: 20px 0px;
+    text-align: center;
+    display: block;
+    font-size: larger;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-decoration-color: #06d6a0;
+}
+.product-frame{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.product-card{
+    max-width: 250px;
+    max-height: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+.product-card:hover{
+    border: 1px solid black;
+}
+.product-card img{
+    width: 250px;
+    height: 370px;
+}
+.product-title{
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+.contact input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  .contact input[type=submit] {
+    background-color: #023047;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .contact input[type=submit]:hover {
+    background-color: #023047d7;
+  }
+  .contact{
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    background-color: #dfe7fd;
+    padding: 20px;
+  }
