@@ -183,6 +183,23 @@ body{
     width: 250px;
     height: 370px;
 }
+.addCart{
+    position: absolute;
+    font-family: 'Roboto Condensed', sans-serif;
+    min-width: 251px;
+    background-color: rgba(255, 255, 255, 0.445);
+    min-height: 372px;
+    line-height: 372px;
+    text-align: center;
+    transform: translateY(-375px);
+}
+.addCart-text{
+    line-height: 1.5;
+    font-weight: bolder;
+    font-size: large;
+    padding: 10px 40px;
+    border: 3px solid black;
+}
 .product-title{
     display: block;
     font-family: 'Roboto Condensed', sans-serif;
