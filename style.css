@@ -190,8 +190,12 @@ body{
     background-color: rgba(255, 255, 255, 0.445);
     min-height: 372px;
     line-height: 372px;
+    visibility: hidden;
     text-align: center;
     transform: translateY(-375px);
+}
+.product-card:hover .addCart{
+    visibility: visible;
 }
 .addCart-text{
     line-height: 1.5;
