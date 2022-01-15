@@ -216,7 +216,6 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
 }
-
 .contact input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -227,7 +226,7 @@ body{
     margin-bottom: 16px;
     resize: vertical;
   }
-  .contact input[type=submit] {
+.contact input[type=submit] {
     background-color: #023047;
     color: white;
     padding: 12px 20px;
@@ -235,10 +234,10 @@ body{
     border-radius: 4px;
     cursor: pointer;
   }
-  .contact input[type=submit]:hover {
+.contact input[type=submit]:hover {
     background-color: #023047d7;
   }
-  .contact{
+.contact{
     border-radius: 5px;
     display: flex;
     margin-top: 30px;
@@ -247,10 +246,10 @@ body{
     background-color: #dfe7fd;
     padding: 20px;
   }
-  .contact form{
+.contact form{
       width: 500px;
   }
-  .contact iframe{
+.contact iframe{
       margin-top: 20px;
   }
   @media only screen and (max-width: 900px ) {
@@ -295,16 +294,16 @@ body{
       .sticky-btn{
           display: block;
       }
+      .contact{
+        flex-direction: column;
+    }
+      .contact form,iframe{
+        width: 100%;
+      }
   }
   @media only screen and (max-width: 550px) {
       .video iframe{
           width: 300px;
           height: 150px;
-      }
-      .contact{
-          flex-direction: column;
-      }
-      .contact form,iframe{
-        width: 100%;
       }
   }
