@@ -1,11 +1,8 @@
 *{
-    margin:0;
-    padding:0;
+    margin: 0%;
+    padding: 0%;
 }
 @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
-body{
-    background-color: #000814;
-}
 ul.breadcrumb{
     background-color: rgba(255, 255, 255, 0.349);
     padding: 10px 20px;
@@ -30,10 +27,13 @@ ul.breadcrumb>li>a{
 ul.breadcrumb>li>a:hover{
     text-decoration: underline;
 }
+body{
+    background-color: #000814;
+}
 .main{
     background-color: #003566;
     width: 500px;
-    padding: 30px;
+    padding: 30px 10px;
     border-radius: 10px;
     position: absolute;
     top: 50%;
@@ -42,17 +42,12 @@ ul.breadcrumb>li>a:hover{
 }
 .close{
     position: absolute;
-    transform: translate(-80%,-100%);
+    transform: translate(-10%,-100%);
 }
 .close img{
     width: 25px;
     height: 25px;
     margin-bottom: -10px;
-}
-img{
-    margin-bottom: -12px;
-    width: 35px;
-    height: 35px;
 }
 .title{
     text-align: center;
@@ -63,81 +58,54 @@ img{
     font-size: xx-large;
     letter-spacing: 5px;
 }
-.uname,.pass,.login-btn,.title,.sign-up{
+label{
+    font-family: 'Dongle', sans-serif;
+    font-weight: bold;
+    font-size: small;
+    color: #f8f9fa;
+}
+.title,.uname,.pass,.submit-btn,.mail{
     font-family: 'Dongle', sans-serif;
     padding: 0px 95px;
     margin: 20px 0px;
 }
-.sign-up{
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
-.title{
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
-.login-btn{
-    position: relative;
-    height: 35px;
+.submit-btn{
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 input[type='text'], input[type='password']{
-    margin-left: 3px;
-    width: 230px;
-    padding: 7px 15px;
+    width: 276px;
+    margin-top: 3px;
+    padding: 8px 15px;
     font-weight: bold;
 }
 input[type='submit']{
-    background-color: #f1faee;
-    font-weight: bolder;
-    border: 3px solid white;
-    position: absolute;
-    border-radius: 5px;
-    padding: 5px 20px;
-    right: 0;
-    margin-right: 99px;
+    width: 100%;
+    padding: 5px 50px;
+    font-weight: bold;
+    background-color: #00bbf9;
+    border: 3px solid #00bbf9;
+    border-radius: 3px;
 }
 input[type='submit']:hover{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
     color: white;
-}
-.forget{
-    padding: 7px 3px;
-    border: none;
-    font-weight: bold;
-    letter-spacing: 0.1px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0);
-}
-.forget:hover{
-    margin-left: -3px;
-    letter-spacing: 1px;
-}
-.su-text{
-    color: white;
-}
-.su-text a{
-    color: #3a86ff;
-    font-weight: bold;
-    text-decoration: none;
-}
-.su-text a:hover{
-    text-decoration: underline;
 }
 @media only screen and (max-width: 600px){
     .main{
         padding: 0;
         max-width: 100%;
     }
-    .uname,.pass,.login-btn,.title,.sign-up{
-        padding: 0;
-        text-align: center;
+    input[type='text'], input[type='password']{
+        width: 80%;
     }
     input[type='submit']{
-        margin: 0 auto;
-        margin-bottom: 5px;
-        display: block;
-        position: relative;
+        width: 50%;
+        text-align: center;
+    }
+    .title,.uname,.pass,.submit-btn,.mail{
+        padding: 0;
+        text-align: center;
     }
     .title{
         margin-top: 50px;

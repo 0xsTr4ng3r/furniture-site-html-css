@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="navigation">
+        <ul class="breadcrumb">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li>Register</li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="close">
+            <a href="./login.html"><img src="./images/close.svg" alt="close"></a>
+        </div>
+        <form method="post">
+            <div class="title">
+                <span>Register</span>
+            </div>
+            <div class="uname">
+                <label for="usrname">Username: </label><br>
+                <input type="text" name="usrname" id="usrname" placeholder="John Doe">
+            </div>
+            <div class="mail">
+                <label for="email">Email: </label><br>
+                <input type="text" name="email" id="email" placeholder="jhondoe@mail.com">
+            </div>
+            <div class="pass">
+                <label for="password">Password: </label><br>
+                <input type="password" name="password" id="password" placeholder="s3cure p4ssw0rd">
+            </div>
+            <div class="pass">
+                <label for="re-pass">Re-enter Password: </label><br>
+                <input type="password" name="re-pass" id="re-pass" placeholder="s3cure p4ssw0rd">
+            </div>
+            <div class="submit-btn">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
