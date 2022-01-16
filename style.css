@@ -19,6 +19,7 @@ body{
 }
 .header{
     position: relative;
+    display: flex;
     padding: 10px 0px;
     background-color: rgba(0, 0, 0, 0.253);
     /* border: 1px solid black; */
@@ -26,8 +27,24 @@ body{
 .title{
     font-family: 'Pushster', cursive;
     font-size: xx-large;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 21ch;
+    letter-spacing: 1px;
+    animation: typing 2s steps(27), blink .5s step-end infinite alternate;
+    border-right: 3px solid;
     color: #ffffff;
     margin-left: 70px;
+}
+@keyframes typing {
+    from {
+        width: 0
+    }
+}  
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
 }
 .align-right{
     position: absolute;
@@ -273,6 +290,11 @@ body{
       }
       .header{
           text-align: center;
+          display: block;
+      }
+      .header>.title{
+          width: 19.7ch;
+          font-size: xx-large
       }
       .login{
           position: relative;
