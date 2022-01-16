@@ -294,7 +294,7 @@ body{
       }
       .header>.title{
           width: 19.7ch;
-          font-size: xx-large
+          font-size: xx-large;
       }
       .login{
           position: relative;
