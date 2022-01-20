@@ -103,6 +103,9 @@ body{
     margin-top: 5px;
     font-size: medium;
 }
+input[type=submit]{
+    cursor: pointer;
+}
 .subscribe input[type=submit]{
     color: black;
     background-color: white;
@@ -269,6 +272,33 @@ body{
 .contact iframe{
       margin-top: 20px;
   }
+.search{
+    background-color: rgba(124, 124, 124, 0.404);
+    overflow: hidden;
+    padding: 0.2%;
+}
+.searchFrame{
+    margin-left: 20%;
+}
+.searchBar{
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    padding: 7px 50px;
+    float: left;
+}
+.searchBtn{
+    margin-top: -6.5px;
+    float: right;
+    margin-right: 20%;
+}
+.searchBtn>input{
+    background-color:#ffffff;
+    border-radius: 10px;
+}
+.searchBtn>input:hover{
+    background-color: rgba(255, 255, 255, 0.603);
+}
   @media only screen and (max-width: 900px ) {
       .about-us .text-box{
           margin-top: 30px;
@@ -318,9 +348,16 @@ body{
       }
       .contact{
         flex-direction: column;
-    }
+      }
+      .search{
+          text-align: center;
+      }
       .contact form,iframe{
         width: 100%;
+      }
+      .searchFrame,.searchBar,.searchBtn{
+          float:none;
+          margin: 0%;
       }
   }
   @media only screen and (max-width: 550px) {
